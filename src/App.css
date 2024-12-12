@@ -1,0 +1,89 @@
+.app-container {
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.add-task-form,
+.task-filters {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.add-task-form input,
+.add-task-form select,
+.add-task-form button {
+  padding: 10px;
+}
+
+.task-table {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.delete-btn {
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-search {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.task-search input {
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ff8000;
+  border-radius: 4px;
+}
+
+.task-counters {
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.task-counters p {
+  background-color: #1aff00;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .add-task-form,
+  .task-filters {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .task-search input {
+    width: 90%;
+  }
+
+  .task-counters {
+    gap: 10px;
+    flex-direction: column;
+  }
+}
